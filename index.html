@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Võ Nhạc PQQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #1b4332; /* Xanh lá đậm */
+            --bg-color: #f0f4f1;
+            --table-header-bg: #2d6a4f;
+            --text-color: #2b2b2b;
+            --border-color: #d8e2dc;
+            --hover-row: #e9ecef;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            width: 100%;
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .table-container {
+            width: 90%;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow-x: auto; /* Hiển thị thanh cuộn ngang trên điện thoại */
+            margin-bottom: 4rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: white;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        th i {
+            margin-right: 8px;
+        }
+
+        tr {
+            transition: background-color 0.2s ease;
+        }
+
+        tr:hover {
+            background-color: var(--hover-row);
+        }
+
+        /* Định dạng riêng cho cột Link */
+        .link-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 15px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .link-btn i {
+            margin-right: 6px;
+        }
+
+        .link-btn:hover {
+            background-color: #081c15;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #d8e2dc;
+            padding: 1.5rem 0;
+            text-align: center;
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lưu Trữ Võ Nhạc</h1>
+        <p>Hệ thống tổng hợp và lưu trữ các bài võ nhạc</p>
+    </header>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th><i class="fa-solid fa-calendar-check"></i> Tên Sự Kiện</th>
+                    <th><i class="fa-solid fa-layer-group"></i> Cấu Trúc Bài Võ Nhạc</th>
+                    <th><i class="fa-solid fa-music"></i> Link Bài Võ Nhạc</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Biểu diễn Lễ Tổng Kết Môn Phái 2025</td>
+                    <td>Gồm 3 đoạn: Khởi thế, Cao trào (ghép nền nhạc Thầy phổ), Thu thế</td>
+                    <td>
+                        <a href="http://abc.com" class="link-btn" target="_blank">
+                            <i class="fa-solid fa-play"></i> Xem Video
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giao lưu Võ thuật Thanh niên</td>
+                    <td>Đồng diễn 4 phút, nhịp điệu nhanh, dứt khoát</td>
+                    <td>
+                        <a href="http://abc.com" class="link-btn" target="_blank">
+                            <i class="fa-solid fa-play"></i> Xem Video
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>[Nhập tên sự kiện...]</td>
+                    <td>[Nhập cấu trúc bài...]</td>
+                    <td>
+                        <a href="http://abc.com" class="link-btn" target="_blank">
+                            <i class="fa-solid fa-play"></i> Xem Video
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lưu Trữ Võ Nhạc PQQ.</p>
+    </footer>
+
+</body>
+</html>
